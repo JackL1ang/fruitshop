@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    padding-bottom: 0rem;
+    background: white;
+
+}
+
+.window {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 8px;
+    background-color: #efefef;
+}
+
+.footer {
+    height: 10%;
+    background-color: #efefef;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.aside {
+    height: 100%;
+    width: 280px;
+    overflow-y: revert;
+}
+
+.content-box {
+    flex: 1;
+    height: 100%;
+    padding-left: 0px;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    background: linear-gradient(115deg,#ce8483 10%,#9f01ea 90%);
+    overflow-y: auto;
+}
+
+.d-flex{
+
+    height: 100%;
+}
+.box{
+    position: relative;
+}
+.nav{
+    --bs-nav-link-color:；
+}
+.admin-center-input {
+    border: 1px solid #ccc;
+    padding: 7px 0px;
+    border-radius: 3px;
+    padding-left: 5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+
+}
+.admin-center-input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}

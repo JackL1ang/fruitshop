@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <default-config>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/freshshop?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT&amp;useSSL=FALSE</property>
+        <property name="user">root</property>
+        <property name="password">root</property>
+        <property name="initialPoolSize">10</property>
+
+    </default-config>
+
+</c3p0-config>

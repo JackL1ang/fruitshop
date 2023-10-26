@@ -1,0 +1,146 @@
+/*转换到登录框*/
+.login-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+.login-box{
+    display: none;
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+#show:checked~ .login-box{
+    display: block;
+}
+.login-box .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.login-box .close-btn:hover{
+    color: #3498db;
+}
+
+/*登录框标题*/
+.login-box .text{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.login-box form{
+    margin-top: -20px;
+}
+
+.login-box .msg_color{
+    display: none;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.login-box .error_msg{
+
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/*信息输入的设置*/
+.login-box form .Account-Information{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+/*输入框信息提示*/
+.login-box form .Account-Information label{
+    font-size: 18px;
+    position: static;
+    text-align: left!important;
+}
+
+/*信息输入*/
+form .Account-Information input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+/*信息输入背景框闪烁*/
+form  .Account-Information input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+}
+/*忘记密码设置*/
+form .forgot-paw{
+    margin-top: -8px;
+}
+
+/*忘记密码字体设置*/
+form .forgot-paw a{
+    color: #3498db;
+    text-decoration:none;
+}
+
+/*鼠标移动到忘记密码，有下划线*/
+form .forgot-paw a:hover{
+    text-decoration:underline;
+}
+
+/*登录确定的大小设置*/
+form .btner{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/*登录确认背景框设置*/
+form .btner .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: -webkit-linear-gradient(right,#56d8e4,#9f01ea,#56d8e4,#9f01ea);
+    transition: all 0.4s;
+}
+form .btner:hover .inner{
+    left: 0;
+}
+/*输入信息后确认登录*/
+form .btner button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/*注册位置设置*/
+form .signup-link{
+    text-align: center;
+}
+/*注册字体设置*/
+form .signup-link a{
+    color: #3498db;
+    text-decoration: none;
+}
+/*注册下划线*/
+form .signup-link a:hover{
+    text-decoration: underline;
+}
