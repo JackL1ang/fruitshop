@@ -1,2 +1,4 @@
 # fruitshop
-基于Java的水果商城
+基于JavaServlet的水果商城
+
+请使用TomCat进行部署
